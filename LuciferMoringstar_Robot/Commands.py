@@ -124,8 +124,11 @@ async def start(bot, message):
                 ],[
                 InlineKeyboardButton("owner", url="https://t.me/Lucifer_DevilZ"),
                 InlineKeyboardButton("About", callback_data="about")
-                ]]
+                ],[
+                InlineKeyboardButton("➕️Add Me To Your Chats ➕️", url="https://t.me/Imdbbott_bot?startgroup=botstart")
+                InlineKeyboardButton("JOIN CHANNEL", url="https://t.me/Latest_Movie_Mediaa")
             )
+                    
         )
         StopPropagation
 
@@ -335,7 +338,7 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('More Botz', url='https://t.me/Lucifer_DevilZ '),
+            InlineKeyboardButton('More Botz', url='https://t.me/Lucifer_DevilZ'),
             InlineKeyboardButton('Video', url=f'{TUTORIAL}')
         ]
         ]
