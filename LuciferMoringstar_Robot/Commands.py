@@ -111,16 +111,16 @@ async def start(bot, message):
                 ]
             )
         )
-   else:
+  else:
         await message.reply_video(
             video="https://telegra.ph/file/e9dda2769fad138590ee3.mp4"
             caption=START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                InlineKeyboardButton("𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗚𝗿𝗼𝘂𝗽", url="https://t.me/Latest_Movie_Media"),
+                InlineKeyboardButton("🔰𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗚𝗿𝗼𝘂𝗽🔰", url="https://t.me/Latest_Movie_Media"),
                 ],[
-                InlineKeyboardButton("Help", callback_data="help"),
+                InlineKeyboardButton("🔰OWNER🔰", url="https://t.me/Lucifer_DevilZ"),
                 InlineKeyboardButton("About", callback_data="about")
                 ]]
             )
@@ -333,7 +333,7 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('More Botz', url='https://t.me/MT_Botz'),
+            InlineKeyboardButton('More Botz', url='https://t.me/Lucifer_DevilZ'),
             InlineKeyboardButton('Video', url=f'{TUTORIAL}')
         ]
         ]
