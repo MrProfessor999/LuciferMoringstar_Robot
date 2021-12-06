@@ -82,10 +82,7 @@ async def start(bot, message):
                         f_caption=f_caption
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
-                buttons = [
-                    [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
-                    ],
+                buttons = [                    
                     [
                         InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
                     ]
@@ -111,26 +108,7 @@ async def start(bot, message):
                 ]
             )
         )
-   else:
-        await cmd.reply_video(
-            video="https://telegra.ph/file/e9dda2769fad138590ee3.mp4"
-            START_MSG,
-            parse_mode="Markdown",
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [[
-                InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                InlineKeyboardButton("JOIN OUR GROUP", url="https://t.me/Latest_Movie_Media")
-                ],[
-                InlineKeyboardButton("owner", url="https://t.me/Lucifer_DevilZ"),
-                InlineKeyboardButton("About", callback_data="about")
-                ],[
-                InlineKeyboardButton("➕️Add Me To Your Chats ➕️", url="https://t.me/Imdbbott_bot?startgroup=botstart")
-                InlineKeyboardButton("JOIN CHANNEL", url="https://t.me/Latest_Movie_Mediaa")
-            )
-                    
-        )
-        StopPropagation
+   
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
@@ -338,8 +316,7 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('More Botz', url='https://t.me/Lucifer_DevilZ'),
-            InlineKeyboardButton('Video', url=f'{TUTORIAL}')
+            InlineKeyboardButton('🔍Search🔎', switch_inline_query_current_chat='')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
